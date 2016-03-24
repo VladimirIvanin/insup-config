@@ -17,10 +17,26 @@
 
 Запускаем скаченный файл и указываем путь установки, в пути установки указываем папку в которую установили Ruby.
 
-### Установка Insup
-После распаковки, в пуске находим и запускаем **Start Command Prompt with Ruby**
+После распаковки, в пуске находим и запускаем **Start Command Prompt with Ruby**, через команду "cd", находим папку в которую утановили Ruby и распаковали DevKit, после чего запускаем команду **ruby dk.rb init**.
 
-В командной строке запускаем:
+```sh
+cd c:\Ruby22-x64
+ruby dk.rb init
+```
+В данной папке сгенерируется конфиг файл для установки DevKit - **config.yml**.
+
+Открываем **config.yml** и вконце дописываем путь до папки с Ruby, обротите внимание на слеш и тире, например:
+
+```ruby
+- C:/Ruby22-x64
+```
+После в командной строке можем запустить команду **ruby dk.rb install**
+
+```sh
+ruby dk.rb install
+```
+### Установка Insup
+После установки DevKit в командной строке запускаем:
 ```sh
 gem install insup
 ```
@@ -74,4 +90,4 @@ insup
 
 * https://github.com/httplab/insup - Репозиторий Insup
 * http://rubyinstaller.org/downloads/ - установщик Ruby для Windows
-
+* https://github.com/oneclick/rubyinstaller/wiki/development-Kit - установка DevKit
