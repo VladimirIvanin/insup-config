@@ -1,0 +1,56 @@
+# Tracked locations. List all subdirectories of the working directory you want Insup to track
+track:
+  - media
+  - snippets
+  - templates
+  - config
+
+# Tracker settings
+#   class: tracker class. Use 'git' or 'simple'
+tracker:
+  class: simple
+
+# Настройки доступа
+# subdomain: ваш домен, например my-shop.myinsales.ru
+# api_key: идентификатор ключа доступа (генерируется в бэк-офисе: Приложения -> Разработчикам -> Создать новый ключ доступа)
+# password: пароль от сгенерированного ключа
+insales:
+  subdomain: shop.myinsales.ru
+  api_key: 00000000000000000000
+  password: 000000000000000000000
+
+# Настройки загрузки
+#   theme_id: id темы из бэк-офиса
+uploader:
+  class: insales
+  theme_id: 000000
+
+# Ignore patterns
+# Insup ignore patterns follow the same rules as Git ignore. Remember that the patterns
+# are considered to be relative to the working directory, not to the tracked locations.
+ignore:
+  - '*.swp'
+  - '*.swx'
+  - '.*'
+  - 'thumbs.db'
+  - '.DS_Store'
+  - '*.log'
+
+# Logging settings
+#   file: path to the log file relative to the working directory. Omit this key to use STDERR instead
+#         of file.
+#   level: log error level. Available options are 'unknown', 'debug', 'error', 'fatal', 'info',
+#          and 'warn'.
+#   pattern: a pattern to for logger to use when writing messages. Available substitutions are:
+#            %{timestamp}, %{level}, %{message} and %{backtrace}.
+#
+log:
+  file: 'log/insup.log'
+  level: 'info'
+  pattern: "%{timestamp} - %{level}\t: %{message} %{backtrace}\n"
+
+# Other options
+options:
+  # Force the use of polling when listening to changes
+  # Use only if Insup doesn't work otherwise
+  force_polling: false
