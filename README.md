@@ -81,8 +81,12 @@ cd c:\mysite
 insup insales download
 ```
 
-Тема скачалась и теперь мы можем править её локально. Чтобы изменения сразу попадали на сервер в командной строке необходимо запустить:
+Тема скачалась и теперь мы можем править её локально. Чтобы изменения сразу попадали на сервер в командной строке необходимо запустить две команды:
+
+* chcp 65001 - это нужно, чтобы нормально обрабатывалась кодировка UTF8
+* insup - эта команда включает сам insup
 ```sh
+chcp 65001
 insup
 ```
 
@@ -91,3 +95,4 @@ insup
 * https://github.com/httplab/insup - Репозиторий Insup
 * http://rubyinstaller.org/downloads/ - установщик Ruby для Windows
 * https://github.com/oneclick/rubyinstaller/wiki/development-Kit - установка DevKit
+ 
