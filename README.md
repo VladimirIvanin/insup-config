@@ -25,7 +25,7 @@
 
 После распаковки, в пуске находим и запускаем **Start Command Prompt with Ruby**, через команду "cd", находим папку в которую утановили Ruby и распаковали DevKit, после чего запускаем команду **ruby dk.rb init**.
 
-```sh
+```
 cd c:\Ruby22-x64
 ruby dk.rb init
 ```
@@ -38,12 +38,12 @@ ruby dk.rb init
 ```
 После в командной строке можем запустить команду **ruby dk.rb install**
 
-```sh
+```
 ruby dk.rb install
 ```
 ### Установка Insup
 После установки DevKit в командной строке запускаем:
-```sh
+```
 gem install insup
 ```
 ## Настройка Insup
@@ -85,12 +85,12 @@ uploader:
 Открываем **Start Command Prompt with Ruby** и через команду "cd", находим папку в которой мы сохранили **.insup**.
 
 Например
-```sh
+```
 cd c:\mysite
 ```
 
 Далее запускаем команду:
-```sh
+```
 insup insales download
 ```
 
@@ -98,7 +98,7 @@ insup insales download
 
 * chcp 65001 - это нужно, чтобы нормально обрабатывалась кодировка UTF8
 * insup - эта команда включает сам insup
-```sh
+```
 chcp 65001
 insup
 ```
