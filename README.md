@@ -1,5 +1,7 @@
 # Установка и настройка Insup для Windows
 
+[Insup](https://github.com/httplab/insup) - иструмент для работы с темами платформы InSales.
+
 ## Необходимые интрументы для работы с Insup
 
   1. Установленный Ruby
@@ -112,7 +114,7 @@ insup
 
 ## Ссылки
 
-* https://github.com/httplab/insup - Репозиторий Insup
-* http://rubyinstaller.org/downloads/ - установщик Ruby для Windows
-* https://github.com/oneclick/rubyinstaller/wiki/development-Kit - установка DevKit
+* [Репозиторий Insup](https://github.com/httplab/insup)
+* [Установщик Ruby для Windows](http://rubyinstaller.org/downloads/) 
+* [Установка DevKit](https://github.com/oneclick/rubyinstaller/wiki/development-Kit) 
  
